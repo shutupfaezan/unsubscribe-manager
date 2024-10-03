@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import UnsubscribeButton from './UnsubscribeButton'; // Import the UnsubscribeButton component
 
-const SendersListPage = ({ accessToken }) => {
+const SendersList = ({ accessToken }) => {
   const [senders, setSenders] = useState([]);
   const [nextPageToken, setNextPageToken] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -111,4 +111,4 @@ const SendersListPage = ({ accessToken }) => {
   );
 };
 
-export default SendersListPage;
+export default SendersList;
